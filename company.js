@@ -1,1 +1,1 @@
-var rellax = new Rellax('.rellax');
+var Rellax = new Rellax('.rellax');
