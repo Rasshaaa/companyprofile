@@ -4,11 +4,11 @@ const nav = document.querySelector('.navbar');
 // Rellax Setup
 var rellax = new Rellax('.rellax');
 
-// Fixed Navbar
+// Fixed and Transparent Navbar
 document.addEventListener('scroll', (e) => {
     if (window.scrollY > window.innerHeight) {
-        nav.classList.add('fixed');
+        nav.classList.add('transparent');
     } else {
-        nav.classList.remove('fixed');
+        nav.classList.remove('transparent');
     }
 });

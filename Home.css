@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -27,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -64,18 +64,19 @@ body::-webkit-scrollbar {
 
 .navbar {
   width: 100%;
-  background-color: var(--transparent1);
+  background-color: #222;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 9999;
   height: 4em;
+  transition: 1s ease-in-out;
 }
 
-.fixed {
-  position: fixed;
+.transparent {
+  background-color: var(--transparent1);
 }
 
 .brand {
@@ -225,7 +226,9 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   z-index: -1;
+  filter: blur(3px);
 }
 
 .hero span h1 {
@@ -277,6 +280,46 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100vh;
   background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eeeeee;
+  padding: 2em 0 0 0;
+ }
+
+ .title {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+ }
+
+ .content img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 30px;
+ }
+
+ .content {
+  display: flex;
+  padding: 3em;
+  align-items: center; 
+ }
+
+ .content-words {
+  background-color: var(--orange-transparent);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 30px;
+ }
+
+ .content h3 {
+  font-size: 1.5em;
+  text-align: center;
+ }
+
+ .content p {
+  padding: 1em 2em;
  }
 
 /* Responsive Breakpoint */
