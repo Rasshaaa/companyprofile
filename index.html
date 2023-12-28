@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PT. Multisarana Medhitama</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="Home.css" type="text/css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -14,53 +15,55 @@
   <!-- Section Hero (Button) -->
   <section id="Hero" class="hero">
     <span>
-      <h1 class="rellax" data-rellax-speed="7">WELCOME</h1>
-      <p class="rellax" data-rellax-speed="7">This is Multisarana Medhitama</p>
-      <a class="btn rellax" href="#Home" data-rellax-speed="7">Get Started</a>
+      <h1 class="rellax" data-rellax-speed="7" data-aos="zoom-in" data-aos-duration="1000">WELCOME</h1>
+      <p class="rellax" data-rellax-speed="7" data-aos="zoom-in" data-aos-duration="1000">This is Multisarana Medhitama</p>
+      <a class="btn rellax" href="#Home" data-rellax-speed="7" data-aos="zoom-in" data-aos-duration="1000" onclick="enableScroll()">Get Started</a>
     </span>
   </section>
 
   <!-- Navigation Bar (2 bar) -->
   <nav class="navbar">
     <span class="brand">
-      <img src="img/Logo-MM.jpg" alt="">
+      <img src="img/Logo-MM.jpg" alt="" data-aos="fade-right" data-aos-duration="500">
       <div class="nama">
-        <h2>MULTISARANA</h2>
-        <h2>MEDHITAMA</h2>
+        <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">MULTISARANA</h2>
+        <h2 data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">MEDHITAMA</h2>
       </div>
     </span>
 
     <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
-            <label class="icon-menu" for="check-icon">
-                <div class="bar bar--1"></div>
-                <div class="bar bar--2"></div>
-                <div class="bar bar--3"></div>
-            </label>
+      <label class="icon-menu" for="check-icon" data-aos="fade-left">
+          <div class="bar bar--1"></div>
+          <div class="bar bar--2"></div>
+          <div class="bar bar--3"></div>
+      </label>
     
     <ul class="list">
-      <a href="#" style="--i:0;">HOME</a>
-      <a href="#" style="--i:1;">ABOUT</a>
-      <a href="#" style="--i:2;">PRODUCTS</a>
-      <a href="#" style="--i:3;">CONTACT</a>
+      <a href="#" style="--i:0;" data-aos="fade-left">HOME</a>
+      <a href="#" style="--i:1;" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">ABOUT</a>
+      <a href="#" style="--i:2;" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">PRODUCTS</a>
+      <a href="#" style="--i:3;" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">CONTACT</a>
     </ul>
   </nav>
 
   <!-- Section About (Picture on the left, Content on the right) -->
   <section id="Home" class="home">
-    <div class="title">
+    <div class="title" data-aos="zoom-in" data-aos-duration="800">
       <h2>Inilah Multisarana Medhitama!</h2>
     </div>
     <div class="content">
-      <img src="img/Home.jpg" alt="Multisarana Medhitama">
-      <div class="content-words">
+      <img src="img/Home.jpg" alt="Multisarana Medhitama" data-aos="zoom-in" data-aos-duration="500">
+      <div class="content-words" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
         <h3>Perusahaan Logistik Terpercaya</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis velit, hic recusandae laudantium delectus obcaecati facere eius aliquid ullam, excepturi optio sed consequuntur quas dolore repudiandae ipsa inventore, id voluptatem illo? Totam deserunt ipsum mollitia? Sunt dolorem animi repellat a!</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque id error est ea animi necessitatibus a accusantium cum maiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium minima aperiam velit, mollitia tempore quasi voluptates vel vero? Quos, unde provident. Repellendus temporibus sed molestias natus esse at mollitia.</p>
       </div>
     </div>
     
   </section>
   
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="company.js"></script>
 </body>
 </html>
